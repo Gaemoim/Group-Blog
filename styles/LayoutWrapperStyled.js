@@ -36,6 +36,6 @@ export const HeaderMenuLi = styled.li`
 export const HeaderMenuLink = styled.h2`
   display: block;
   position: relative;
-  margin: 31px 40px;
+  margin: 30px 40px;
   font-size: 16px;
 `;
