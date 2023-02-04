@@ -8,6 +8,7 @@ const siteMetaData = {
   siteRepo: "https://github.com/Gaemoim/Group-Blog",
   siteLogo: "/static/images/logo.png",
   socialBanner: "/static/images/gaemoim.jpg",
+  email: "choo121600@gmail.com",
 };
 
 module.exports = siteMetaData;
