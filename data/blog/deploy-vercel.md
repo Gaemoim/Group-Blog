@@ -5,7 +5,7 @@ tags: ["NextJS", "Vercel", "Github-actions"]
 draft: false
 thumnail: /static/images/deploy-vercel/image.png
 summary: 비용을 발생시키지 않기 위한 온몸 비틀기
-authors: ["YeongUk"]
+authors: ["yeonguk"]
 ---
 
 아니 여기서부터 문제가 있을 줄은 몰랐다.

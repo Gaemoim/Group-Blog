@@ -1,6 +1,6 @@
 const siteMetaData = {
   title: "Gaemoim",
-  author: "YeongUk Choo",
+  author: "yeonguk",
   headerTitle: "Gaemoim",
   description: "개발에 관심있는 사람들의 모임입니다.",
   language: "ko-KR",

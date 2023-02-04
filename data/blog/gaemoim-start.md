@@ -6,7 +6,7 @@ draft: false
 thumnail: "/static/images/gaemoim-start/image.png"
 summary: "실은 지금 운영하고 있는 스터디가 4기인데 그전 3개의 기수 모두 실패했다.
 스트레스를 많이 받았던터라 다신 안한다고 다짐했었는데..."
-authors: ["YeongUk"]
+authors: ["yeonguk"]
 ---
 
 # 스터디를 약 1년 4개월간 운영하며
