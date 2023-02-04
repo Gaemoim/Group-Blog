@@ -6,7 +6,7 @@ import {
   HeaderMenuLink,
   HeaderNav,
   MainHeader,
-} from "@/styles/LayoutWrapperStyled";
+} from "@/styles/componentStyles/LayoutWrapperStyled";
 
 const LayoutWrapper = ({ children }) => {
   return (
@@ -20,15 +20,16 @@ const LayoutWrapper = ({ children }) => {
         <HeaderNav>
           <ul>
             {headerNavLinks.map((link) => (
-              <CustomLink href={link.href} key={link.label}>
+              <CustomLink href={link.href} key={link.title}>
                 <HeaderMenuLi>
-                  <HeaderMenuLink>{link.label}</HeaderMenuLink>
+                  <HeaderMenuLink>{link.title}</HeaderMenuLink>
                 </HeaderMenuLi>
               </CustomLink>
             ))}
           </ul>
         </HeaderNav>
       </MainHeader>
+      <main>{children}</main>
     </div>
   );
 };

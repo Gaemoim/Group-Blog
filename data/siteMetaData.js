@@ -7,6 +7,7 @@ const siteMetaData = {
   siteUrl: "https://group-blog.vercel.app/",
   siteRepo: "https://github.com/Gaemoim/Group-Blog",
   siteLogo: "/static/images/logo.png",
+  socialBanner: "/static/images/gaemoim.jpg",
 };
 
 module.exports = siteMetaData;
