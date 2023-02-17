@@ -25,6 +25,7 @@ import {
 import React, { useState } from "react";
 
 export default function ContentListLayout({
+  type,
   posts,
   initialDisplayPosts = [],
   paging,
@@ -64,7 +65,7 @@ export default function ContentListLayout({
                   postData;
                 return (
                   <SecAreaLi key={slug}>
-                    <CustomLink href={`/blog/${slug}`}>
+                    <CustomLink href={`/${type}/${slug}`}>
                       <SecBox>
                         <ThumnailImage>
                           <Image

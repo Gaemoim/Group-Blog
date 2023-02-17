@@ -6,7 +6,8 @@ import ContentListLayout from "@/layouts/ContentListLayout";
 export const DEFAULT_PAGE_SIZE = 10;
 
 export async function getStaticProps() {
-  const posts = await getAllFiles("blog");
+  const type = "tech-blog";
+  const posts = await getAllFiles("tech-blog");
   const initialDisplayPosts = posts.slice(0, DEFAULT_PAGE_SIZE);
   const paging = {
     current: 1,
@@ -15,6 +16,7 @@ export async function getStaticProps() {
 
   return {
     props: {
+      type,
       posts,
       initialDisplayPosts,
       paging,
@@ -22,7 +24,7 @@ export async function getStaticProps() {
   };
 }
 
-export default function Blog({ posts, initialDisplayPosts, paging }) {
+export default function Blog({ type, posts, initialDisplayPosts, paging }) {
   return (
     <>
       <PageSEO
@@ -30,10 +32,11 @@ export default function Blog({ posts, initialDisplayPosts, paging }) {
         description={siteMetaData.description}
       />
       <ContentListLayout
+        type={type}
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         paging={paging}
-        title="블로그"
+        title="테크 블로그"
         description="우린 이런 것들을 하고 있어요"
       />
     </>
