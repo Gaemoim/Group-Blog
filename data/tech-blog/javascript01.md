@@ -3,7 +3,7 @@ title: Javascript 변수 설정(var, let, const)
 date: "2023-02-17"
 tags: ["Javascript"]
 draft: false
-thumnail: "/static/images/gaemoim-start/image.png"
+thumnail: "/static/images/javascript/javascriptLogo.webp"
 summary: "Javascript ES6이후의 Javascript 변수 설정(var, let, const)"
 authors: ["yeonguk"]
 ---
