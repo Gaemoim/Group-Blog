@@ -13,7 +13,7 @@ authors: ["yeonguk"]
 
 실은 지금 운영하고 있는 스터디가 4기인데 그전 3개의 기수 모두 실패했다.
 스트레스를 많이 받았던터라 다신 안한다고 다짐했었는데...
-![Untitled](/static/images/gaemoim-start/image1.png)
+![image1](/static/images/gaemoim-start/image1.png)
 갓전역한 아는 동생의 부탁으로 10명에서 시작하게되었다.
 하지만 정작 그 동생도 나가고 3명만 남아서 근근히 운영하고 있다.
 대보션에서 좋은 경험을 했기에 잘해보고 싶어서 사비를 많이 쓴 것 치고는 망해가는 지점이다.
