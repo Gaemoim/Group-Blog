@@ -25,6 +25,7 @@ import {
 import React, { useState } from "react";
 
 export default function ContentListLayout({
+  type,
   posts,
   initialDisplayPosts = [],
   paging,
@@ -32,6 +33,13 @@ export default function ContentListLayout({
   description,
 }) {
   const [searchValue, setSearchValue] = useState("");
+
+  const filteredBlogPosts = posts.filter((postData) => {
+    const searchContent =
+      postData.title + postData.summary + postData.tags.join(" ");
+    return searchContent.toLowerCase().includes(searchValue.toLowerCase());
+  });
+
   const displayPosts =
     initialDisplayPosts.length > 0 && !searchValue
       ? initialDisplayPosts
@@ -59,12 +67,13 @@ export default function ContentListLayout({
           </SubSecSearchBar>
           <div>
             <SecAreaUl>
+              {!filteredBlogPosts.length && "No posts found."}
               {displayPosts.map((postData) => {
                 const { slug, title, thumnail, summary, authors, date } =
                   postData;
                 return (
                   <SecAreaLi key={slug}>
-                    <CustomLink href={`/blog/${slug}`}>
+                    <CustomLink href={`/${type}/${slug}`}>
                       <SecBox>
                         <ThumnailImage>
                           <Image

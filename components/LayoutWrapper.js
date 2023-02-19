@@ -7,6 +7,7 @@ import {
   HeaderNav,
   MainHeader,
 } from "@/styles/componentStyles/LayoutWrapperStyled";
+import MobileNav from "./mobileNav";
 
 const LayoutWrapper = ({ children }) => {
   return (
@@ -28,6 +29,7 @@ const LayoutWrapper = ({ children }) => {
             ))}
           </ul>
         </HeaderNav>
+        <MobileNav />
       </MainHeader>
       <main>{children}</main>
     </div>

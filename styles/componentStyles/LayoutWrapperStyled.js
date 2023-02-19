@@ -25,6 +25,9 @@ export const HeaderNav = styled.nav`
   -ms-flex-align: center;
   align-items: center;
   margin-left: 20px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 `;
 
 export const HeaderMenuLi = styled.li`

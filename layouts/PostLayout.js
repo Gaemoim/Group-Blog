@@ -18,6 +18,7 @@ const postDateTemplate = {
 
 export default function PostLayout({
   frontMatter,
+  type,
   authorDetails,
   next,
   prev,
@@ -28,7 +29,7 @@ export default function PostLayout({
   return (
     <div>
       <BlogSEO
-        url={`${siteMetaData.siteUrl}/blog/${slug}`}
+        url={`${siteMetaData.siteUrl}/${type}/${slug}`}
         authorDetails={authorDetails}
         {...frontMatter}
       />
