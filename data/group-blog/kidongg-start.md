@@ -1,9 +1,9 @@
 ---
 title: 새로운 도전과 개모임
-date: "2023-02-19"
+date: "2023-02-20"
 tags: ["Gaemoim", "Frontend"]
 draft: false
-thumnail: "/static/images/kidongg-start/image3.png"
+thumnail: "/static/images/kidongg-start/image2.png"
 summary: "막순아, 여 운동장 아이다, 놀러온거 아이다"
 authors: ["kidongg"]
 ---
@@ -16,7 +16,7 @@ authors: ["kidongg"]
 
 그럼에도 불구하고 마음 한구석에는 불안감이 있었다. 무엇보다 임용을 준비하는 과정에서 회의감이 들었다. 임용합격을 위해 학생들의 발달에 상관없는 것들을 외우고 있다는게 무의미하다고 생각을 했다. 오랜 시간을 고민한 끝에 임용시험을 치지 말자는 결론을 냈다. 그렇게 새로운 도전을 하기로 마음을 먹게 되었다.
 
- <img width="500" height="400" src="https://user-images.githubusercontent.com/104154151/219954850-a1828cb4-acb3-4017-a765-9289ee98ff33.png">
+![Untitled](/static/images/kidongg-start/image3.png)
 
 # 왜 프로그래밍을 하고 싶어 하나요?
 
@@ -26,7 +26,7 @@ authors: ["kidongg"]
 
 **교육격차를 해결할 방법은 없을까?**
 
-<img width="500" height="600" alt="image1" src="https://user-images.githubusercontent.com/104154151/219954702-43d221cf-a938-46c7-adee-6d439dc64e90.png">
+![Untitled](/static/images/kidongg-start/image1.png)
 
 # 왜 프론트엔드 개발자가 되려고 하나요?
 
@@ -40,7 +40,7 @@ authors: ["kidongg"]
 
 **사람은 쉽게 죽지 않는다!**
 
-<img width="500" height="400" alt="토할때까지 해" src="https://user-images.githubusercontent.com/104154151/219952661-32d63066-8f82-4231-89a3-2f7699400156.png">
+![Untitled](/static/images/kidongg-start/image5.png)
 
 # '개모임'에 어떻게 들어왔나요? 당신의 역할은?
 
@@ -48,4 +48,4 @@ authors: ["kidongg"]
 
 현재 **'개모임'은 부산, 울산 지역에서 개발 공부를 하고 싶어하는 사람들을 연결하는 커뮤니티가 되고자한다.** 교육격차 해소에 관심이 있는 나에게 의미있는 일이 될거 같다. 나는 본 블로그에서 프론트엔드 내용을 중심으로 공부한 내용을 정리하고자 한다. 콘텐츠가 하나 둘씩 쌓여 개발 공부를 하는 사람들에게 도움이 되었으면 한다.
 
-![스터디 해야지](https://user-images.githubusercontent.com/104154151/219952710-dae63afb-7e19-4a0b-b2e0-abb52d352f63.png)
+![Untitled](/static/images/kidongg-start/image6.png)
