@@ -3,7 +3,7 @@ title: 새로운 도전과 개모임
 date: "2023-02-19"
 tags: ["Gaemoim", "Frontend"]
 draft: false
-thumnail: "/static/images/kidongg-start/image1.png"
+thumnail: "/static/images/kidongg-start/image3.png"
 summary: "막순아, 여 운동장 아이다, 놀러온거 아이다"
 authors: ["kidongg"]
 ---
@@ -16,7 +16,7 @@ authors: ["kidongg"]
 
 그럼에도 불구하고 마음 한구석에는 불안감이 있었다. 무엇보다 임용을 준비하는 과정에서 회의감이 들었다. 임용합격을 위해 학생들의 발달에 상관없는 것들을 외우고 있다는게 무의미하다고 생각을 했다. 오랜 시간을 고민한 끝에 임용시험을 치지 말자는 결론을 냈다. 그렇게 새로운 도전을 하기로 마음을 먹게 되었다.
 
-<img width="500" height="400" alt="image2" src="https://user-images.githubusercontent.com/104154151/219952501-f22abb07-35ec-49c9-9191-52a9258e75c4.png">
+ <img width="500" height="400" src="https://user-images.githubusercontent.com/104154151/219954850-a1828cb4-acb3-4017-a765-9289ee98ff33.png">
 
 # 왜 프로그래밍을 하고 싶어 하나요?
 
@@ -26,7 +26,7 @@ authors: ["kidongg"]
 
 **교육격차를 해결할 방법은 없을까?**
 
- <img width="500" height="400" alt="image3" src="https://user-images.githubusercontent.com/104154151/219952555-d8c320a5-df67-4540-9ef6-18e270d88b27.png">
+<img width="500" height="600" alt="image1" src="https://user-images.githubusercontent.com/104154151/219954702-43d221cf-a938-46c7-adee-6d439dc64e90.png">
 
 # 왜 프론트엔드 개발자가 되려고 하나요?
 
