@@ -77,7 +77,7 @@ export default function Home({ posts }) {
           <SubSecLogoList>
             <Logo>
               <Image
-                src="/static/images/javascript/javascriptLogo.webp"
+                src="/static/images/javascript/javascriptLogo.png"
                 alt="js logo"
                 width={100}
                 height={70}
@@ -93,7 +93,7 @@ export default function Home({ posts }) {
             </Logo>
             <Logo>
               <Image
-                src="/static/images/nestjs/nestjsLogo.png"
+                src="/static/images/nestjs/nestjsLogo.svg"
                 alt="js logo"
                 width={100}
                 height={70}
