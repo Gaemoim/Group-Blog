@@ -9,9 +9,9 @@ export const SubVisualBG = styled.div`
   transform: scale(1);
   -webkit-transition: all 1.5s ease-in-out;
   transition: all 1.5s ease-in-out;
-  background-image: url("/static/images/BG01.png");
+  background-image: url("/static/images/banner.jpeg");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: round;
 `;
 
 export const SubSecBGInner = styled.div`
@@ -66,6 +66,10 @@ export const SubSecSearchBar = styled.div`
   visibility: visible;
   opacity: 1;
   width: 425px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 `;
 
 export const BlogSearchBar = styled.input`
