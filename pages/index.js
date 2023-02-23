@@ -49,6 +49,11 @@ export default function Home({ posts }) {
           <SubSecColumn>
             <SubSecColumnLeft>
               <h1>개발이 외롭다 느껴지면 이곳으로 오세요</h1>
+              <p>
+                전국 각지에서 떨어져 홀로 개발을 공부하다 보면, 외로움에
+                지치기도, 길을 잃을 수도 있어요. 각자의 탐험 속에 서로가 서로의
+                나침반이 되어 같이 모험을 떠나봅시다.
+              </p>
               <SubColButtonArea>
                 <a href="https://discord.gg/5dKVjN7rvj">
                   <span>Discord로 함께하기</span>

@@ -36,7 +36,14 @@ export const SubSecColumnLeft = styled.div`
   h1 {
     font-size: calc(42px + 1.5vw);
     font-weight: 600;
+    margin-bottom: 20px;
   }
+
+  p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
   @media (max-width: 767px) {
     padding-bottom: 45px;
     padding-top: 45px;
