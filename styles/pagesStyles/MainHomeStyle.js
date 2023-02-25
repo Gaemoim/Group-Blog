@@ -58,6 +58,12 @@ export const SubSecColumnRight = styled.div`
   @media (min-width: 767px) {
     padding-left: 90px;
   }
+  @media (prefers-color-scheme: dark) {
+    img {
+      -webkit-filter: brightness(0) invert(1);
+      filter: brightness(0) invert(1);
+    }
+  }
 `;
 
 export const SubColButtonArea = styled.div`

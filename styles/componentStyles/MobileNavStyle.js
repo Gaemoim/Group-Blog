@@ -44,6 +44,10 @@ export const ToggleDiv = styled.div`
     padding: 10px;
     background: url("/static/images/main/close.png") no-repeat 50%;
     background-size: 24px auto;
+    @media (prefers-color-scheme: dark) {
+      -webkit-filter: brightness(0) invert(1);
+      filter: brightness(0) invert(1);
+    }
   }
 `;
 
