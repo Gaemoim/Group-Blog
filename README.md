@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 개(발)모임 블로그
 
-## Getting Started
+## 기여
 
-First, run the development server:
+### 폴더 구조
 
-```bash
-npm run dev
-# or
-yarn dev
+```
+${data}
+├── authors
+├── group-blog
+├── headerNavLinks.js
+├── siteMetaData.js
+└── tech-blog
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
+${data}
+├── 작성자들 정보
+├── 그룹 블로그(그룹이나 개인의 이야기)
+├── 블로그의 네비게이션
+├── 블로그의 메타데이터
+└── 테크 블로그(기술에 대한 이야기)
+```
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+data 폴더를 찾아보면 상기와 같은 방식으로 정리되어 있다.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### 기여 방법
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. authors 폴더에 본인 아이디.md 파일을 만든다.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+├── authors
+│   ├── author1.md
+│   ├── author2.md
+│   ├── author3.md
+│   └── author4.md
+```
 
-## Learn More
+2. author1.md 파일에 아래와 같이 작성한다. 이 때, avatar에는 본인의 프로필 사진을 넣고, /static/images/ 폴더에 사진을 넣어준다.
 
-To learn more about Next.js, take a look at the following resources:
+```
+---
+name: Gaemoim
+avatar: /static/images/gaemoim.jpg
+email: choo121600@gmail.com
+github: https://github.com/Gaemoim
+---
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. tech-blog나 group-blog 폴더에 개시물을 작성한다. 이 때, 아래와 같이 작성한다.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+title: '야발!, 블로그를 쓰고 싶어요!'
+date: "2023-12-16"
+tags: ['블로그', '공부']
+draft: false
+thumnail: /static/images/ya-ba/image.png
+summary: 블로그가 쓰고 싶은데 어떻게 해야할지 모르겠어요.
+author: ["gaemoim"]
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+---
+
+# 블로그를 쓰고 싶어요!
+
+본문 주저리 주저리
+
+```
+
+4. 마지막으로, Commit & PR을 통해 기여를 완료한다.
