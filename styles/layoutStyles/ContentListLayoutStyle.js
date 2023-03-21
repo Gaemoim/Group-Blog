@@ -83,15 +83,15 @@ export const BlogSearchBar = styled.input`
 `;
 
 export const BlogSearchTagBar = styled.select`
-  width : 25%;
+  width: 25%;
   height: 40px;
   padding: 0 0 0 10px;
   border-radius: 8px;
   font-size: 14px;
   outline: none;
-  margin : 0 10px 20px 0;
+  margin: 0 10px 20px 0;
   margin-bottom: 20px;
-`
+`;
 
 export const SecAreaUl = styled.ul`
   // margin-top: 40px;
@@ -153,4 +153,13 @@ export const SecContentDesc = styled.p`
   line-height: 1.5;
 `;
 
-export const SecContentAuthor = styled.div``;
+export const SecContentImgAndAuthor = styled.div`
+  display: flex;
+  gap: 10px;
+`;
+
+export const SecContentAuthor = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
