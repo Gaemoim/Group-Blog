@@ -73,7 +73,7 @@ export const SubSecSearchBar = styled.div`
 `;
 
 export const BlogSearchBar = styled.input`
-  width: 100%;
+  width: 70%;
   height: 40px;
   padding: 0 0 0 10px;
   border-radius: 8px;
@@ -81,6 +81,17 @@ export const BlogSearchBar = styled.input`
   outline: none;
   margin-bottom: 20px;
 `;
+
+export const BlogSearchTagBar = styled.select`
+  width : 25%;
+  height: 40px;
+  padding: 0 0 0 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  margin : 0 10px 20px 0;
+  margin-bottom: 20px;
+`
 
 export const SecAreaUl = styled.ul`
   // margin-top: 40px;
