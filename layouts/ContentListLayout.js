@@ -22,6 +22,7 @@ import {
   SubSecInnerIntroTitle,
   SubSecInnerIntroDesc,
   BlogSearchTagBar,
+  SecContentImgAndAuthor,
 } from "@/styles/layoutStyles/ContentListLayoutStyle";
 import React, { useState } from "react";
 
@@ -38,23 +39,23 @@ export default function ContentListLayout({
 
   const handleSelect = (e) => {
     setSearchOptionValue(e.target.value);
-  }
+  };
 
-  const filterOptionBlogPosts = postData => {
-    if (searchOptionValue === "1"){
+  const filterOptionBlogPosts = (postData) => {
+    if (searchOptionValue === "1") {
       return postData.title + postData.summary + postData.tags.join(" ");
-    } else if (searchOptionValue === "2" ) {
+    } else if (searchOptionValue === "2") {
       return postData.authors.join(" ");
-    } else if ( searchOptionValue === "3") {
+    } else if (searchOptionValue === "3") {
       return postData.title;
-    }else {
-      return postData.tags.join(" ")
+    } else {
+      return postData.tags.join(" ");
     }
-  }
+  };
 
   const filteredBlogPosts = posts.filter((postData) => {
     const searchContent = filterOptionBlogPosts(postData);
-    console.log(searchContent)
+    console.log(searchContent);
     return searchContent.toLowerCase().includes(searchValue.toLowerCase());
   });
 
@@ -78,7 +79,7 @@ export default function ContentListLayout({
         <SubSecInner>
           <SubSecSearchBar>
             <BlogSearchTagBar onChange={handleSelect} value={searchOptionValue}>
-              <option value="1" >제목+내용</option>
+              <option value="1">제목+내용</option>
               <option value="2">작성자</option>
               <option value="3">제목</option>
               <option value="4">내용</option>
@@ -95,6 +96,7 @@ export default function ContentListLayout({
               {displayPosts.map((postData) => {
                 const { slug, title, thumnail, summary, authors, date } =
                   postData;
+                const image = "/static/images/" + authors + ".jpg";
                 return (
                   <SecAreaLi key={slug}>
                     <CustomLink href={`/${type}/${slug}`}>
@@ -112,10 +114,19 @@ export default function ContentListLayout({
                             <SecContentTitle>{title}</SecContentTitle>
                             <SecContentDesc>{summary}</SecContentDesc>
                           </SecContentTitleAndDesc>
-                          <SecContentAuthor>
-                            <time dateTime={date}>{formatDate(date)}</time>
-                            <p>{authors}</p>
-                          </SecContentAuthor>
+                          <SecContentImgAndAuthor>
+                            <Image
+                              alt={image}
+                              src={image}
+                              width={50}
+                              height={50}
+                              style={{ borderRadius: "50%" }}
+                            />
+                            <SecContentAuthor>
+                              <time dateTime={date}>{formatDate(date)}</time>
+                              <p>{authors}</p>
+                            </SecContentAuthor>
+                          </SecContentImgAndAuthor>
                         </SecContent>
                       </SecBox>
                     </CustomLink>
