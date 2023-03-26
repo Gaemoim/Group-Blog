@@ -163,3 +163,12 @@ export const SecContentAuthor = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
+
+export const SecContentTagArea = styled.div`
+  
+`
+export const SecContentTag = styled.li`
+  margin-right: 10px;
+  float: left;
+  color: #4aa8d8;
+`

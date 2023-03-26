@@ -23,6 +23,8 @@ import {
   SubSecInnerIntroDesc,
   BlogSearchTagBar,
   SecContentImgAndAuthor,
+  SecContentTagArea,
+  SecContentTag,
 } from "@/styles/layoutStyles/ContentListLayoutStyle";
 import React, { useState } from "react";
 
@@ -55,9 +57,14 @@ export default function ContentListLayout({
 
   const filteredBlogPosts = posts.filter((postData) => {
     const searchContent = filterOptionBlogPosts(postData);
-    console.log(searchContent);
     return searchContent.toLowerCase().includes(searchValue.toLowerCase());
   });
+
+  const onClickTag = (e,tag) => {
+    setSearchValue(tag);
+    setSearchOptionValue("4")
+    e.preventDefault();
+  }
 
   const displayPosts =
     initialDisplayPosts.length > 0 && !searchValue
@@ -82,11 +89,12 @@ export default function ContentListLayout({
               <option value="1">제목+내용</option>
               <option value="2">작성자</option>
               <option value="3">제목</option>
-              <option value="4">내용</option>
+              <option value="4">태그</option>
             </BlogSearchTagBar>
             <BlogSearchBar
               type="text"
               onChange={(e) => setSearchValue(e.target.value)}
+              value={searchValue}
               placeholder="Search.."
             />
           </SubSecSearchBar>
@@ -94,7 +102,7 @@ export default function ContentListLayout({
             <SecAreaUl>
               {!filteredBlogPosts.length && "No posts found."}
               {displayPosts.map((postData) => {
-                const { slug, title, thumnail, summary, authors, date } =
+                const { slug, title, thumnail, summary, authors, date, tags } =
                   postData;
                 const image = "/static/images/" + authors + ".jpg";
                 return (
@@ -114,6 +122,11 @@ export default function ContentListLayout({
                             <SecContentTitle>{title}</SecContentTitle>
                             <SecContentDesc>{summary}</SecContentDesc>
                           </SecContentTitleAndDesc>
+                          <ul>
+                              {tags.map((tag) => {
+                                return <SecContentTag key={`/${slug}/${tag}`} onClick={(event)=>onClickTag(event,tag)}>#{tag}</SecContentTag>
+                              })}
+                          </ul>
                           <SecContentImgAndAuthor>
                             <Image
                               alt={image}
