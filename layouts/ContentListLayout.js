@@ -63,6 +63,7 @@ export default function ContentListLayout({
     initialDisplayPosts.length > 0 && !searchValue
       ? initialDisplayPosts
       : filteredBlogPosts;
+
   return (
     <SubVisual>
       <SubVisualBG>
